@@ -1,5 +1,6 @@
 package com.example._211spring.controller;
 
+import com.example._211spring.configurator.Basket;
 import com.example._211spring.service.BasketService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,12 +21,12 @@ public class BasketController {
     }
 
     @GetMapping("/add")
-    public void add(@RequestParam Integer id) {
-        basketService.addProductID(id);
+    public void add(@RequestParam ArrayList<Integer> list) {
+        basketService.addProductID(list);
     }
 
     @GetMapping("/get")
-    public ArrayList get() {
+    public Basket get() {
         return basketService.getProductID();
     }
 }
