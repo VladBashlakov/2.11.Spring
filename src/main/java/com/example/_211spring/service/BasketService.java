@@ -1,10 +1,9 @@
 package com.example._211spring.service;
 
-import com.example._211spring.configurator.Basket;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public interface BasketService {
-    Basket getProductID();
+    List<Integer> getProductID();
     void addProductID(ArrayList<Integer> list);
 }

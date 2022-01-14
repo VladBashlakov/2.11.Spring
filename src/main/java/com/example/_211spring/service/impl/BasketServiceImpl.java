@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class BasketServiceImpl implements BasketService {
@@ -22,7 +23,7 @@ public class BasketServiceImpl implements BasketService {
     }
 
     @Override
-    public Basket getProductID() {
-        return basket;
+    public List<Integer> getProductID() {
+        return basket.getList();
     }
 }

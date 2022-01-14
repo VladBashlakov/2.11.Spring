@@ -15,4 +15,7 @@ public class Basket {
         this.list = list;
     }
 
+    public List<Integer> getList() {
+        return list;
+    }
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/order")
@@ -26,7 +27,7 @@ public class BasketController {
     }
 
     @GetMapping("/get")
-    public Basket get() {
+    public List<Integer> get() {
         return basketService.getProductID();
     }
 }
