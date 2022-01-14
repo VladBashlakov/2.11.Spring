@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 
 public class BasketController {
 
