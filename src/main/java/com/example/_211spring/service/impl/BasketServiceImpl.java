@@ -23,7 +23,7 @@ public class BasketServiceImpl implements BasketService {
     }
 
     @Override
-    public List<Integer> getProductID() {
+    public List<Integer> getAllProducts() {
         return basket.getList();
     }
 }

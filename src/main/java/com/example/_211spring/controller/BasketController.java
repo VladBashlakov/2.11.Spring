@@ -28,6 +28,6 @@ public class BasketController {
 
     @GetMapping("/get")
     public List<Integer> get() {
-        return basketService.getProductID();
+        return basketService.getAllProducts();
     }
 }

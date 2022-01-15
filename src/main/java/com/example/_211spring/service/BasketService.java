@@ -4,6 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface BasketService {
-    List<Integer> getProductID();
+    List<Integer> getAllProducts();
     void addProductID(ArrayList<Integer> list);
 }
